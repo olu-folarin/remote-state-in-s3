@@ -6,7 +6,7 @@ terraform {
     key = "backend-tf-rs-s3-backend-dev"
     region = "us-east-1"
     dynamodb_table = "dev_application_locks"
-    encryption = true
+    encrypt = true
   }
 }
 
