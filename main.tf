@@ -6,7 +6,7 @@ terraform {
     key = "${var.application_name}-${var.project_name}-${var.project_environment}"
     region = "us-east-1"
     dynamodb_table = "dev_application_locks"
-    encryption = 
+    encryption = true
   }
 }
 
