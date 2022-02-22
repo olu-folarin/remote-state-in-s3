@@ -3,7 +3,7 @@ terraform {
   // name of the backend -- s3
   backend "s3" {
     bucket = "dev-applications-backend-state-olufolarin"
-    key = "${var.application_name}-${var.project_name}-${var.project_environment}"
+    key = "backend-tf-rs-s3-backend-dev"
     region = "us-east-1"
     dynamodb_table = "dev_application_locks"
     encryption = true
